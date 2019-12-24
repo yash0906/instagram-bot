@@ -18,8 +18,8 @@ browser = webdriver.Firefox(firefox_profile = browser_profile)
 
 
 browser.get('https://www.instagram.com/accounts/login/')
-email_id = input("Enter your email: ")#'yashbhansali0906@gmail.com'
-password  = input("Enter your password: ")#'Yash@0906'
+email_id = input("Enter your email: ")
+password  = input("Enter your password: ")
 print("entering your instagram----")
 email = browser.find_element_by_xpath('/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[2]/div/label/input')
 email.send_keys(email_id)
